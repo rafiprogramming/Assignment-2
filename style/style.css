@@ -1,0 +1,15 @@
+body{
+    border: 2px solid black;
+}
+#Nave-bar{
+    background-color: rgba(145, 0, 248, 0.753);
+    color: white;
+    display: flex;
+    padding: 0 40px 0 40px;
+    justify-content: space-between
+}
+#Nave-bar .nav-contant a{
+  color: white;
+  align-items: center;
+  padding-top: 200px;
+}
