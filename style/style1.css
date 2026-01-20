@@ -1,6 +1,7 @@
 body{
     border: 2px solid black;
   background-color:  rgb(28, 2, 48);
+  /* background-repeat: no-repeat; */
   height: 100%;
 
 }
@@ -96,6 +97,9 @@ font-size: 20px;
 height: 20px;
 align-items: center;
 }
+main{
+  /* padding: 120px 200px 120px 200px; */
+}
 
 
 /* about podcust */
@@ -168,7 +172,8 @@ font-size: 30px;
             gap: 30px;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(3, 1fr);
-            padding: 90px 200px 120px 200px;
+            margin: 90px 200px 120px 200px;
+            border: 2px solid red;
             
     
 }
@@ -191,6 +196,10 @@ font-size: 16px;
 .card-containar #Interviews{
   grid-column: span 2;
 }
+
+
+
+
 /* video section */
 .video-card-selection .head{
     font-style: Bold;
@@ -209,8 +218,12 @@ font-size: 30px;
     /* box-shadow: 10px 10px 10px 10px burlywood; */
     background-color:  rgb(28, 2, 48);
     text-align: center;
-    height: auto;
+    height: auto; 
     color: #FFFFFF;
+}
+.video video{
+  height: 200px;
+  width: 200px;
 }
 .video-card-containar {
     display: flex;
@@ -220,6 +233,92 @@ font-size: 30px;
      display: grid;
             gap: 30px;
             grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(3, 1fr);
-            /* padding: 90px 200px 120px 200px; */
+            /* grid-template-rows: repeat(3, 1fr); */
+           margin: 50px 200px 0 100px;
+            border: 2px solid red;
+}
+.video-card-containar .video h3{
+  text-align: left;
+  font-style: Bold;
+font-size: 24px;
+}
+.video-card-containar .video p{
+  text-align: left;
+  font-style: Regular;
+font-size: 16px;
+}
+
+
+/* host */
+#host-continar .head{
+  color: #FFFFFF;
+  padding-bottom: 50px;
+    font-style: Bold;
+font-size: 25px;
+}
+#host-continar{
+margin: 200px 200px 120px 200px;
+  border: 2px solid red;
+  text-align: center;
+  color: #FFFFFF;
+}
+#host-continar .host{
+  display: flex;
+  padding-right: 50px;
+ 
+}
+#host-continar .host .host-title{
+  text-align: left;
+  padding-left: 50px;
+}
+#host-continar .host .host-title h1{
+  font-style: Bold;
+font-size: 32px;
+}
+#host-continar .host .host-title p{
+  font-style: Regular;
+font-size: 16px;
+}
+#host-continar .icon{
+  text-align:left;
+  padding-left: 250px;
+
+
+}
+ #host-continar .icon img{
+  gap: 20px;
+
+}
+
+
+/* footer */
+footer{
+     background-image: url(../assets/footer-bg.png);
+    height: 400px;
+    width: 100%;
+}
+#footer-continar{
+  color: white;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 100px;
+}
+#footer-continar span{
+    color: rgba(219, 72, 159, 1);
+}
+.link {
+  display: flex;
+ padding-left: 450px;
+ gap: 40px;
+}
+.link a{
+  font-size: 20px;
+ color: #FFFFFF;
+}
+footer p{
+  text-align: center;
+  color: #FFFFFF;
+  font-style: Regular;
+font-size: 16px;
+padding-top: 40px;
 }
