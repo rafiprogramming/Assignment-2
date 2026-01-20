@@ -43,19 +43,30 @@ header{
 height: 44px;
 }
 
+
+
+ @media screen and (max-width: 576px) {
+            .nav-containar{
+               grid-template-columns: ;
+            }
+          }
+
 /* banner */
 #banner-containar{
     background-image: url(../assets/hero-bg.png);
      height: 100%;
-     width: 100%;background-position: center;
+     width: 100%;
+     background-position: center;
      border: 5px solid red;
+     padding-top: 200px;
      padding-bottom: 150px;
+     padding-right: 130px;
 }
 #banner-containar .logo{
     background-image: url(../assets/hero-circle.png);
     background-repeat: no-repeat;
     background-position: 510px;
-   padding: 170px 600px 5px 620px;
+   padding: 200px 600px 5px 620px;
    width: 350px;
 height: 350px;
 }
@@ -197,6 +208,24 @@ font-size: 16px;
   grid-column: span 2;
 }
 
+@media screen and (max-width: 576px) {
+           .card-containar {
+    display: flex;
+    gap: 100px;
+    flex-wrap: wrap;
+    text-align-last: left;
+     display: grid;
+            gap: 30px;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            margin: 90px 200px 120px 200px;
+            border: 2px solid red;
+        } 
+ 
+    }
+        
+ 
+
 
 
 
@@ -321,4 +350,7 @@ footer p{
   font-style: Regular;
 font-size: 16px;
 padding-top: 40px;
+}
+.hide{
+  display: none;
 }
